@@ -251,10 +251,326 @@ namespace MauiAppShowDoMilhao
            },
        };
 
-        List<Pergunta> perguntas_difceis = new()
-        {
 
+       List<Pergunta> perguntas_medias = new()
+        {
+            new Pergunta
+            {
+                Id = 21,
+                Enunciado = "A cidade de Pompéia, que foi soterrada por um vulcão fica em qual desses países?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "JAPÃO" },
+                    new Alternativa{ Correta = false, Descricao = "MÉXICO" },
+                    new Alternativa{ Correta = true, Descricao = "ITÁLIA" },
+                    new Alternativa{ Correta = false, Descricao = "ESTADOS UNIDOS" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 22,
+                Enunciado = "Como eram chamados os pilotos suicidas da Segunda Guerra?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = true, Descricao = "CAMICASES" },
+                    new Alternativa{ Correta = false, Descricao = "SASHIMIS" },
+                    new Alternativa{ Correta = false, Descricao = "HARAQUIRIS" },
+                    new Alternativa{ Correta = false, Descricao = "SUMÔS" },
+
+                }
+            },
+            new Pergunta
+            {
+                Id = 23,
+                Enunciado = "Como é chamada a cantora que representa o papel principal em uma ópera?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "PRIMEIRA DAMA" },
+                    new Alternativa{ Correta = false, Descricao = "DONA-PRIMA" },
+                    new Alternativa{ Correta = true, Descricao = "PRIMA-DONA" },
+                    new Alternativa{ Correta = false, Descricao = "OBRA-PRIMA" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 24,
+                Enunciado = "Peroba é uma espécie de?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "INSETO" },
+                    new Alternativa{ Correta = true, Descricao = "ÁRVORE" },
+                    new Alternativa{ Correta = false, Descricao = "VERME" },
+                    new Alternativa{ Correta = false, Descricao = "VERDURA" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 25,
+                Enunciado = "O Coliseu é um monumento histórico de que cidade européia?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "PARIS" },
+                    new Alternativa{ Correta = false, Descricao = "COPENHAGUE" },
+                    new Alternativa{ Correta = true, Descricao = "ROMA" },
+                    new Alternativa{ Correta = false, Descricao = "LONDRES" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 26,
+                Enunciado = "Quem foi eleito presidente da África do Sul em 1994?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "NELSON PIQUET" },
+                    new Alternativa{ Correta = true, Descricao = "NELSON MANDELA" },
+                    new Alternativa{ Correta = false, Descricao = "NELSON NED" },
+                    new Alternativa{ Correta = false, Descricao = "JOHN NELSON" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 27,
+                Enunciado = "Quantos quilates tem o ouro puro?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "18" },
+                    new Alternativa{ Correta = false, Descricao = "20" },
+                    new Alternativa{ Correta = true, Descricao = "24" },
+                    new Alternativa{ Correta = false, Descricao = "30" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 28,
+                Enunciado = "Segundo a crença popular, a mula-sem-cabeça é mulher de quem?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "DO COROINHA" },
+                    new Alternativa{ Correta = true, Descricao = "DO PADRE" },
+                    new Alternativa{ Correta = false, Descricao = "DO SACRISTÃO" },
+                    new Alternativa{ Correta = false, Descricao = "DO BISPO" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 29,
+                Enunciado = "Que atriz protagonizou o filme “Titanic”?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "CAMERON DIAZ" },
+                    new Alternativa{ Correta = true, Descricao = "KATE WINSLET" },
+                    new Alternativa{ Correta = false, Descricao = "BRIDGET FONDA" },
+                    new Alternativa{ Correta = false, Descricao = "CATHERINE ZETTA JONES" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 30,
+                Enunciado = "Como é chamada a doença que causa perda desigual da melanina?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "ASTIGMATISMO" },
+                    new Alternativa{ Correta = false, Descricao = "TENDINITE" },
+                    new Alternativa{ Correta = true, Descricao = "VITILIGO" },
+                    new Alternativa{ Correta = false, Descricao = "VITINGA" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 31,
+                Enunciado = "No filme, quem era parceiro de crimes da Bonnie?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "BILL" },
+                    new Alternativa{ Correta = true, Descricao = "CLYDE" },
+                    new Alternativa{ Correta = false, Descricao = "JAMES" },
+                    new Alternativa{ Correta = false, Descricao = "BUTCH" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 32,
+                Enunciado = "Quem é o parceiro de aventuras de Dom Quixote?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = true, Descricao = "SANCHO PANÇA" },
+                    new Alternativa{ Correta = false, Descricao = "GUILHERME TELL" },
+                    new Alternativa{ Correta = false, Descricao = "SIGMUND FREUD" },
+                    new Alternativa{ Correta = false, Descricao = "LANCELOT" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 33,
+                Enunciado = "Nas histórias do Snoopy, qual é o nome do passarinho?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "PIU-PIU" },
+                    new Alternativa{ Correta = true, Descricao = "WOODSTOCK" },
+                    new Alternativa{ Correta = false, Descricao = "CANARINHO" },
+                    new Alternativa{ Correta = false, Descricao = "ROUXINOL" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 34,
+                Enunciado = "Que planta era usada para fabricação de papel no antigo Egito?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = true, Descricao = "PAPIRO" },
+                    new Alternativa{ Correta = false, Descricao = "EUCALIPTO" },
+                    new Alternativa{ Correta = false, Descricao = "OLIVEIRA" },
+                    new Alternativa{ Correta = false, Descricao = "MILHO" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 35,
+                Enunciado = "Quem pintou o quadro “La Gioconda”, conhecido como “Mona Lisa”?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = true, Descricao = "LEONARDO DA VINCI" },
+                    new Alternativa{ Correta = false, Descricao = "TICIANO" },
+                    new Alternativa{ Correta = false, Descricao = "RAFAEL" },
+                    new Alternativa{ Correta = false, Descricao = "MICHELÂNGELO" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 36,
+                Enunciado = "Quando começou e terminou a Primeira Guerra Mundial?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = true, Descricao = "1914-1919" },
+                    new Alternativa{ Correta = false, Descricao = "1939-1945" },
+                    new Alternativa{ Correta = false, Descricao = "1921-1932" },
+                    new Alternativa{ Correta = false, Descricao = "1912-1915" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 37,
+                Enunciado = "Quem introduziu o futebol no Brasil?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "PELÉ" },
+                    new Alternativa{ Correta = false, Descricao = "JOÃO HAVELANGE" },
+                    new Alternativa{ Correta = true, Descricao = "CHARLES MILLER" },
+                    new Alternativa{ Correta = false, Descricao = "PAULO MACHADO" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 38,
+                Enunciado = "Que colônia britânica foi devolvida à China em 1997?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "PEQUIM" },
+                    new Alternativa{ Correta = false, Descricao = "HANÓI" },
+                    new Alternativa{ Correta = false, Descricao = "HIROSHIMA" },
+                    new Alternativa{ Correta = true, Descricao = "HONG KONG" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 39,
+                Enunciado = "Como é chamado o objeto falsificado vendido como original?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "PIRARUCU" },
+                    new Alternativa{ Correta = false, Descricao = "PERNETA" },
+                    new Alternativa{ Correta = true, Descricao = "PIRATA" },
+                    new Alternativa{ Correta = false, Descricao = "PAPAGAIO" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 40,
+                Enunciado = "Qual é o nome original do filme “O médico e o monstro”?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "MASTERS E JOHNSON" },
+                    new Alternativa{ Correta = true, Descricao = "DR. JEKYLL E MR. HYDE" },
+                    new Alternativa{ Correta = false, Descricao = "BONNIE E CLYDE" },
+                    new Alternativa{ Correta = false, Descricao = "D. QUIXOTE E SANCHO PANÇA" },
+                }
+            },
         };
+
+        List<Pergunta> perguntas_dificeis = new()
+        {
+            new Pergunta
+            {
+                Id = 41,
+                Enunciado = "Em qual espécie o macho choca os ovos e a fêmea procura alimento?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "ANDORINHA" },
+                    new Alternativa{ Correta = false, Descricao = "PATO SELVAGEM" },
+                    new Alternativa{ Correta = true, Descricao = "PINGÜIM" },
+                    new Alternativa{ Correta = false, Descricao = "MARRECO" },
+
+                }
+            },
+            new Pergunta
+            {
+                Id = 42,
+                Enunciado = "Em qual país está localizado o “Muro das lamentações”?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "ALEMANHA" },
+                    new Alternativa{ Correta = false, Descricao = "BRASIL" },
+                    new Alternativa{ Correta = false, Descricao = "VENEZUELA" },
+                    new Alternativa{ Correta = true, Descricao = "ISRAEL" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 43,
+                Enunciado = "Onde nasceu Van Gogh, o grande pintor impressionista?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "POLÔNIA" },
+                    new Alternativa{ Correta = false, Descricao = "FRANÇA" },
+                    new Alternativa{ Correta = false, Descricao = "ITÁLIA" },
+                    new Alternativa{ Correta = true, Descricao = "HOLANDA" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 44,
+                Enunciado = "O que significa literalmente Perestroika?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "CONVERSÃO" },
+                    new Alternativa{ Correta = false, Descricao = "INVOLUÇÃO" },
+                    new Alternativa{ Correta = true, Descricao = "REESTRUTURAÇÃO" },
+                    new Alternativa{ Correta = false, Descricao = "REGRESSÃO" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 45,
+                Enunciado = "Qual oceano tem o maior volume de água?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "ATLÂNTICO" },
+                    new Alternativa{ Correta = true, Descricao = "PACÍFICO" },
+                    new Alternativa{ Correta = false, Descricao = "ÍNDICO" },
+                    new Alternativa{ Correta = false, Descricao = "ÁRTICO" },
+                }
+            },
+        };
+
+
+
+
+        public App()
+        {
+            InitializeComponent();
+
+            MainPage = new AppShell();
+        }
 
     }
 }
