@@ -560,6 +560,103 @@ namespace MauiAppShowDoMilhao
                     new Alternativa{ Correta = false, Descricao = "ÁRTICO" },
                 }
             },
+            new Pergunta
+            {
+                Id = 46,
+                Enunciado = "Qual foi o último presidente militar do Brasil?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "FERNANDO COLLOR" },
+                    new Alternativa{ Correta = true, Descricao = "JOÃO FIGUEIREDO" },
+                    new Alternativa{ Correta = false, Descricao = "TANCREDO NEVES" },
+                    new Alternativa{ Correta = false, Descricao = "JOÃO GOULART" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 47,
+                Enunciado = "Quem escreveu “Ulisses” em 1922?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "ERNEST HEMINGWAY" },
+                    new Alternativa{ Correta = false, Descricao = "MARCEL PROUST" },
+                    new Alternativa{ Correta = false, Descricao = "T.S. ELLIOT" },
+                    new Alternativa{ Correta = true, Descricao = "JAMES JOYCE" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 48,
+                Enunciado = "Como é chamada a bola de gelo e poeira que orbita em torno do sol?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = true, Descricao = "COMETA" },
+                    new Alternativa{ Correta = false, Descricao = "METEORITO" },
+                    new Alternativa{ Correta = false, Descricao = "CAMADA DE OZÔNIO" },
+                    new Alternativa{ Correta = false, Descricao = "ESTRELA D’ALVA" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 49,
+                Enunciado = "A eletrônica é parte de qual ciência?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = true, Descricao = "FÍSICA" },
+                    new Alternativa{ Correta = false, Descricao = "BIOLOGIA" },
+                    new Alternativa{ Correta = false, Descricao = "QUÍMICA" },
+                    new Alternativa{ Correta = false, Descricao = "BOTÂNICA" },
+                }
+
+            },
+            new Pergunta
+            {
+                Id = 50,
+                Enunciado = "Que figura mitológica é conhecida por sua força extraordinária?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "ÁTILA" },
+                    new Alternativa{ Correta = false, Descricao = "MINOTAURO" },
+                    new Alternativa{ Correta = false, Descricao = "PERSEU" },
+                    new Alternativa{ Correta = true, Descricao = "HÉRCULES" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 51,
+                Enunciado = "A que país pertence a ilha de Terra Nova?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "ESTADOS UNIDOS" },
+                    new Alternativa{ Correta = false, Descricao = "DINAMARCA" },
+                    new Alternativa{ Correta = true, Descricao = "CANADÁ" },
+                    new Alternativa{ Correta = false, Descricao = "FRANÇA" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 52,
+                Enunciado = "Na criação do Estado do Tocantins, que estado teve o território reduzido?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = true, Descricao = "GOIÁS" },
+                    new Alternativa{ Correta = false, Descricao = "MATO GROSSO" },
+                    new Alternativa{ Correta = false, Descricao = "PARÁ" },
+                    new Alternativa{ Correta = false, Descricao = "MARANHÃO" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 53,
+                Enunciado = "“Arábica” e “robusta” são tipos de quê?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "UVA" },
+                    new Alternativa{ Correta = true, Descricao = "CAFÉ" },
+                    new Alternativa{ Correta = false, Descricao = "MELÃO" },
+                    new Alternativa{ Correta = false, Descricao = "LARANJA" },
+                }
+            },
         };
 
 
