@@ -497,7 +497,7 @@ namespace MauiAppShowDoMilhao
             },
         };
 
-        List<Pergunta> perguntas_dificeis = new()
+       List<Pergunta> perguntas_dificeis = new()
         {
             new Pergunta
             {
@@ -657,7 +657,133 @@ namespace MauiAppShowDoMilhao
                     new Alternativa{ Correta = false, Descricao = "LARANJA" },
                 }
             },
+            new Pergunta
+            {
+                Id = 54,
+                Enunciado = "Em que ano Ayrton Senna venceu o primeiro campeonato de Fórmula 1?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "1987" },
+                    new Alternativa{ Correta = false, Descricao = "1990" },
+                    new Alternativa{ Correta = false, Descricao = "1985" },
+                    new Alternativa{ Correta = true, Descricao = "1988" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 55,
+                Enunciado = "Que símbolo está desenhado no centro da bandeira Argentina?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = true, Descricao = "SOL" },
+                    new Alternativa{ Correta = false, Descricao = "LUA" },
+                    new Alternativa{ Correta = false, Descricao = "ESTRELA" },
+                    new Alternativa{ Correta = false, Descricao = "FOICE E MARTELO" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 56,
+                Enunciado = "De quem é a frase ”Penso, logo existo”?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "PLATÃO" },
+                    new Alternativa{ Correta = false, Descricao = "JÚLIO VERNE" },
+                    new Alternativa{ Correta = false, Descricao = "ARISTÓTELES" },
+                    new Alternativa{ Correta = true, Descricao = "RENÉ DESCARTES" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 57,
+                Enunciado = "Quem construiu o primeiro telescópio astronômico completo?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "CYRUS MCCORMICK" },
+                    new Alternativa{ Correta = false, Descricao = "THOMAS EDISON" },
+                    new Alternativa{ Correta = false, Descricao = "MICHELANGELO" },
+                    new Alternativa{ Correta = true, Descricao = "GALILEU GALILEI\r\n" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 58,
+                Enunciado = "A quem se atribui a frase “Eu sou o Estado”?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = true, Descricao = "LUIZ XIV" },
+                    new Alternativa{ Correta = false, Descricao = "LUIZ XV" },
+                    new Alternativa{ Correta = false, Descricao = "LUIZ XVI" },
+                    new Alternativa{ Correta = false, Descricao = "NAPOLEÃO BONAPARTE" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 59,
+                Enunciado = "Quem foi aluno de Platão e tutor de Alexandre, o Grande?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "PITÁGORAS" },
+                    new Alternativa{ Correta = false, Descricao = "DIDEROT" },
+                    new Alternativa{ Correta = true, Descricao = "ARISTÓTELES" },
+                    new Alternativa{ Correta = false, Descricao = "GALILEU GALILEI" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 60,
+                Enunciado = "Em que ano foi inaugurada a estátua do Cristo Redentor no Rio de Janeiro?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "1921" },
+                    new Alternativa{ Correta = false, Descricao = "1931" },
+                    new Alternativa{ Correta = false, Descricao = "1941" },
+                    new Alternativa{ Correta = false, Descricao = "1951" },
+                }
+            },
         };
+
+        List<Pergunta> perguntas_finais = new()
+        {
+            new Pergunta
+            {
+                Id = 61,
+                Enunciado = "Como se chama o explorador de grutas e cavernas?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "ESPELEÓLOGO" },
+                    new Alternativa{ Correta = false, Descricao = "AGROSTÓLOGO" },
+                    new Alternativa{ Correta = false, Descricao = "PSICÓLOGO" },
+                    new Alternativa{ Correta = false, Descricao = "CAMPANÓLOGO" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 62,
+                Enunciado = "O que procurava Juan Ponce de Leon quando descobriu a Flórida?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "A CIDADE PERDIDA DE OURO" },
+                    new Alternativa{ Correta = false, Descricao = "A FONTE DA JUVENTUDE" },
+                    new Alternativa{ Correta = false, Descricao = "UNICÓRNIOS" },
+                    new Alternativa{ Correta = false, Descricao = "SEU GATO" },
+                }
+            },
+            new Pergunta
+            {
+                Id = 63,
+                Enunciado = "Nova Caledônia faz parte da:",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "MICRONÉSIA" },
+                    new Alternativa{ Correta = false, Descricao = "MELANÉSIA" },
+                    new Alternativa{ Correta = false, Descricao = "POLINÉSIA" },
+                    new Alternativa{ Correta = false, Descricao = "INDONÉSIA" },
+                }
+            },
+        };
+
+
 
 
 
