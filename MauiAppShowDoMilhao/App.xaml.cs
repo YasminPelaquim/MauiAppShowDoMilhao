@@ -4,7 +4,7 @@ namespace MauiAppShowDoMilhao
 {
     public partial class App : Application
     {
-       List<Pergunta> perguntas_faceis = new() 
+       static List<Pergunta> perguntas_faceis = new() 
        {
            new Pergunta
            {
@@ -251,8 +251,7 @@ namespace MauiAppShowDoMilhao
            },
        };
 
-
-       List<Pergunta> perguntas_medias = new()
+       static List<Pergunta> perguntas_medias = new()
         {
             new Pergunta
             {
@@ -497,7 +496,7 @@ namespace MauiAppShowDoMilhao
             },
         };
 
-       List<Pergunta> perguntas_dificeis = new()
+       static List<Pergunta> perguntas_dificeis = new()
         {
             new Pergunta
             {
@@ -743,7 +742,7 @@ namespace MauiAppShowDoMilhao
             },
         };
 
-        List<Pergunta> perguntas_finais = new()
+       static List<Pergunta> perguntas_finais = new()
         {
             new Pergunta
             {
@@ -751,7 +750,7 @@ namespace MauiAppShowDoMilhao
                 Enunciado = "Como se chama o explorador de grutas e cavernas?",
                 Alternativas = new()
                 {
-                    new Alternativa{ Correta = false, Descricao = "ESPELEÓLOGO" },
+                    new Alternativa{ Correta = true, Descricao = "ESPELEÓLOGO" },
                     new Alternativa{ Correta = false, Descricao = "AGROSTÓLOGO" },
                     new Alternativa{ Correta = false, Descricao = "PSICÓLOGO" },
                     new Alternativa{ Correta = false, Descricao = "CAMPANÓLOGO" },
@@ -764,7 +763,7 @@ namespace MauiAppShowDoMilhao
                 Alternativas = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "A CIDADE PERDIDA DE OURO" },
-                    new Alternativa{ Correta = false, Descricao = "A FONTE DA JUVENTUDE" },
+                    new Alternativa{ Correta = true, Descricao = "A FONTE DA JUVENTUDE" },
                     new Alternativa{ Correta = false, Descricao = "UNICÓRNIOS" },
                     new Alternativa{ Correta = false, Descricao = "SEU GATO" },
                 }
@@ -776,14 +775,48 @@ namespace MauiAppShowDoMilhao
                 Alternativas = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "MICRONÉSIA" },
-                    new Alternativa{ Correta = false, Descricao = "MELANÉSIA" },
+                    new Alternativa{ Correta = true, Descricao = "MELANÉSIA" },
                     new Alternativa{ Correta = false, Descricao = "POLINÉSIA" },
                     new Alternativa{ Correta = false, Descricao = "INDONÉSIA" },
                 }
             },
         };
 
+       public static Pergunta getRandomPerguntaFacil()
+        {
+            Random r = new Random();
 
+            int sorteado = r.Next(1, 20);
+
+            return perguntas_faceis[sorteado];
+        }
+
+        public static Pergunta getRandomPerguntaMedia()
+        {
+            Random r = new Random();
+
+            int sorteado = r.Next(21, 40);
+
+            return perguntas_medias[sorteado];
+        }
+
+        public static Pergunta getRandomPerguntaDificil()
+        {
+            Random r = new Random();
+
+            int sorteado = r.Next(41, 60);
+
+            return perguntas_dificeis[sorteado];
+        }
+
+        public static Pergunta getRandomPerguntaFinal()
+        {
+            Random r = new Random();
+
+            int sorteado = r.Next(61, 63);
+
+            return perguntas_finais[sorteado];
+        }
 
 
 
