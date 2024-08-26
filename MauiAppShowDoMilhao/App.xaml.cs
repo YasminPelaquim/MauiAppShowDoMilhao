@@ -183,7 +183,7 @@ namespace MauiAppShowDoMilhao
                Alternativas = new()
                {
                    new Alternativa { Correta = false, Descricao = "PENADINHO" },
-                   new Alternativa { Correta = false, Descricao = "ZÉ DO CAIXÃO" },
+                   new Alternativa { Correta = true, Descricao = "ZÉ DO CAIXÃO" },
                    new Alternativa { Correta = false, Descricao = "ZÉ DO CASARÃO" },
                    new Alternativa { Correta = false, Descricao = "TONINHO DO DIABO" },
 
@@ -240,7 +240,7 @@ namespace MauiAppShowDoMilhao
            new Pergunta
            {
                Id = 20,
-               Enunciado = "Quantos titulares possui umaequipe de vôlei?",
+               Enunciado = "Quantos titulares possui uma equipe de vôlei?",
                Alternativas = new()
                {
                    new Alternativa{ Correta = false, Descricao = "CINCO" },

@@ -2,7 +2,8 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+        double premio = 0;
+        int pergunta_count = 0;
 
         public MainPage()
         {
@@ -16,7 +17,7 @@
             this.BindingContext = App.getRandomPerguntaFacil();
         }
 
-        private void Button_Clicked_Proxima(object sender, EventArgs e)
+        private async void Button_Clicked_Proxima(object sender, EventArgs e)
         {
             bool acertou = false;
             string resp = "";
@@ -59,11 +60,31 @@
             }
 
             if (acertou) {
-                DisplayAlert("ACERTOU!", resp, "OK");
-                this.BindingContext = App.getRandomPerguntaFacil();
+                await DisplayAlert("ACERTOU!", resp, "OK");
+                avanca_pergunta();
             } else
             {
-                DisplayAlert("ERROU!", "Você perdeu", "OK");
+                await DisplayAlert("ERROU!", "Você perdeu", "OK");
+            }
+        }
+
+        void avanca_pergunta()
+        {
+            if(pergunta_count <= 5) {
+                premio = premio + 1000;
+                this.BindingContext = App.getRandomPerguntaFacil();
+            }
+
+            if(pergunta_count > 5 && pergunta_count <= 10)
+            {
+                premio = premio + 10000;
+                this.BindingContext = App.getRandomPerguntaMedia();
+            }
+
+            if(pergunta_count > 10 && pergunta_count < 15)
+            {
+                premio = premio + 100000;
+                this.BindingContext = App.getRandomPerguntaDificil();
             }
         }
     }
