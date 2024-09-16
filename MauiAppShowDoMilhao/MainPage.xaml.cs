@@ -2,19 +2,18 @@
 {
     public partial class MainPage : ContentPage
     {
-        double premio = 0;
-        int pergunta_count = 0;
+        double premio = 1000;
+        int pergunta_count = 1;
 
         public MainPage()
         {
             InitializeComponent();
-        }
 
-        
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
             this.BindingContext = App.getRandomPerguntaFacil();
+
+            lbl_nivel.Text = "Fácil";
+            lbl_premio.Text = premio.ToString("C");
+            lbl_pergunta_numero.Text = pergunta_count.ToString();
         }
 
         private async void Button_Clicked_Proxima(object sender, EventArgs e)
@@ -61,6 +60,7 @@
 
             if (acertou) {
                 await DisplayAlert("ACERTOU!", resp, "OK");
+                pergunta_count++;
                 avanca_pergunta();
             } else
             {
@@ -73,19 +73,25 @@
             if(pergunta_count <= 5) {
                 premio = premio + 1000;
                 this.BindingContext = App.getRandomPerguntaFacil();
+                lbl_nivel.Text = "Fácil";
             }
 
             if(pergunta_count > 5 && pergunta_count <= 10)
             {
                 premio = premio + 10000;
                 this.BindingContext = App.getRandomPerguntaMedia();
+                lbl_nivel.Text = "Média";
             }
 
             if(pergunta_count > 10 && pergunta_count < 15)
             {
                 premio = premio + 100000;
                 this.BindingContext = App.getRandomPerguntaDificil();
+                lbl_nivel.Text = "Dificil";
             }
+
+            lbl_premio.Text = premio.ToString("C");
+            lbl_pergunta_numero.Text = pergunta_count.ToString();
         }
     }
 
